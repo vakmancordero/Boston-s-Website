@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- StyleSheet -->
-    {{--<link rel="stylesheet" type="text/css" href="{{ asset('bootstrap-3.3.7/css/bootstrap.min.css') }}">--}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/template/bootstrap.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/template/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/template/animate.min.css') }}">
@@ -28,8 +27,6 @@
 
 </head>
 <body>
-
-@yield('content')
 
 <header class="page-nav">
     <div class="container">
@@ -62,6 +59,8 @@
         </div>
     </div>
 </header>
+
+@yield('content')
 
 <!-- JavaScript -->
 @yield('javascript')

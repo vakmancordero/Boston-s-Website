@@ -10,6 +10,6 @@
 
     <h2>Esto es una prueba</h2>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci autem consequuntur delectus eius, exercitationem expedita illo maxime nisi perspiciatis quasi, ratione saepe sequi sint temporibus veniam veritatis vero voluptatem.</p>
+    <p>Estamos cambiando contenido</p>
 
 @stop

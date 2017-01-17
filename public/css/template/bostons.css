@@ -316,7 +316,6 @@ a:hover {
         background: -o-linear-gradient(left, #b7172e 60%, #5c0c17 70%);
         background: -ms-linear-gradient(left, #b7172e 60%, #5c0c17 70%);
         background: linear-gradient(to right, #b7172e 60%, #5c0c17 70%);
-        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#b7172e', endColorstr='#5c0c17', GradientType=1)
     }
 }
 

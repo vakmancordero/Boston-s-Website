@@ -12,55 +12,67 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/template/font-awesome.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/template/magnific-popup.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/template/bostons.css') }}">
+            
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
+    
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800i" rel="stylesheet">
 
     @yield('stylesheets')
 
     <script src="{{ asset('library/jquery-3.1.1.min.js') }}"></script>
     <script src="{{ asset('library/angular.min.js') }}"></script>
     <script src="{{ asset('bootstrap-3.3.7/js/bootstrap.js') }}"></script>
+    
 
     <script src="{{ asset('js/template/main.js') }}"></script>
+    <script src="{{ asset('js/index.js') }}"></script>
 
     @yield('javascript-before')
 
     <title>@yield('title')</title>
 
 </head>
-<body>
+<body style="padding-top: 0px;">
 
-<header class="page-nav">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button class="navbar-toggle" id="btn-nav" type="button" data-toggle="collapse" data-backdrop="static" data-keyboard="false" data-target="#page-nav-items">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html">
-                                <img alt="" class="img-responsive" src="images/navbar/logo-bostons-2.png" width="130">
-                            </a>
-                        </div>
 
-                        <div class="collapse navbar-collapse" id="page-nav-items">
-                            <ul class="nav navbar-nav navbar-right nav-main">
-                                <li class=""><a href="menu.html">Men&uacute;</a></li>
-                                <li class=""><a href="bostons-fan.html">Boston&prime;s Fan</a></li>
-                                <li class=""><a href="ubicaciones.html">Ubicaciones</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
+    
+    
+    
 
 @yield('content')
+
+
+<div class="slider">
+    <ul class="nav nav-pills" id="head-links">
+        <li role="presentation" id="linkIzquierda"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Menu</a></li>
+        <li role="presentation"><a href="#">Promociones</a></li>
+        <li role="presentation" id="linkDerecha"><a href="#">Locacion</a></li>
+    </ul> 
+    <img src="{{ asset('images/logo.png') }}" id="head-logo">
+    
+    <div class="señalamiento">
+        
+        <p class="señalIzquierda"> < </p>
+        
+        
+        <p class="señalDerecha"> > </p>
+        
+    </div>
+    <div class ="footerPrincipal">
+        
+    </div>
+    
+        <div class ="slider0">
+            <img class="principal" src="{{ asset('images/food1.jpeg') }}"> 
+        </div>
+        <div class ="slider1">
+            <img class="principal" src="{{ asset('images/drinkHero.jpeg') }}"> 
+        </div>
+    
+</div>
+
 
 <!-- JavaScript -->
 @yield('javascript')

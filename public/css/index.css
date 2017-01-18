@@ -1,0 +1,96 @@
+.principal { 
+    /*width: 100%;*/
+    display: block;
+    
+    height: 100%;
+    
+    
+}
+
+#head-links { 
+    position: absolute;
+    display: block;
+    right: 10%;
+    top: 10%;
+    font-size: 20px;
+    
+}
+
+#linkIzquierda { 
+border-radius: 5px 0px 0px 5px;
+-moz-border-radius: 5px 0px 0px 5px;
+-webkit-border-radius: 5px 0px 0px 5px;
+border: 2px hidden #000000;
+}
+#linkDerecha { 
+    border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    border: 2px hidden #000000;
+}
+
+#head-links li { 
+  background-color: rgba(0,0,0,.5)
+      
+}
+
+#head-links a { 
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    
+}
+#head-logo { 
+     position: absolute;
+    display: block;
+    left: 10%;
+    top: 5%;
+}
+
+.footerPrincipal { 
+
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+    height: 10%;
+    background-color: rgba(0,0,0,.5);
+    
+    background-repeat: repeat;
+        
+        
+}
+
+.slider { 
+    overflow: hidden;
+}
+
+.señalamiento { 
+    position: absolute;    
+    display: block;
+}
+.señalamiento  p { 
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    background-color: rgba(0,0,0,.2);
+    color:black;
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 2px hidden #000000;
+
+}
+
+.slider1 img { 
+    position: absolute;
+    top: 0px;
+    z-index: -10;
+}
+.slider0 img { 
+    
+}

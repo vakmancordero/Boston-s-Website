@@ -5,6 +5,12 @@ $(document).ready(function(){
     var marginSeñalamiento = ((marginWindow / 100) * 50) - $('.señalDerecha').height();
     var marginSeñalDerecha = $(window).width();
     var marginSeñalDerecha = marginSeñalDerecha - 50;
+    var marginMensaje = marginWindow / 2;
+        marginMensaje = marginMensaje - ($('.mensaje').height() / 2);
+        
+    $('.slider').height(marginWindow);
+        
+    $('.mensaje').css("margin-top",marginMensaje);
    
     $('.principal').css("height", marginWindow);        
     $('.footerPrincipal').css("margin-top", marginFot);
@@ -12,29 +18,52 @@ $(document).ready(function(){
     $('.señalamiento').css("margin-top" , marginSeñalamiento);
     $('.señalDerecha').css("margin-left" , marginSeñalDerecha);
     
+    var x = 0;
+function slider(){ 
+
+    if( x == 0 ) { 
+        x++;
+    }
     
-    function slider() {
+    else if(x == 1) {
+    $('#uno').fadeOut(1000);            
+        x++;        
+    }
+    
+    else if( x == 2) { 
         
-      var texto = $('#fade').text();
+        $('#uno').fadeIn(1000);    
+        x = 1
+    }
+    
+    
+        
+ }    
+    
+    
 
-      if (texto == texto1) {
-        $('#fade').fadeOut( "slow", function() {
-            $('#fade').text(texto2);
-        });
-        $('#fade').fadeIn( "slow", function() {
-        });
-      }
-
-      else if (texto == texto2) {
-        $('#fade').fadeOut( "slow", function() {
-            $('#fade').text(texto3);
-        });
-        $('#fade').fadeIn( "slow", function() {});
-      }
-     
-  }
-
-  setInterval(slider,3500);
+setInterval(slider,8000);
+  
+$( window ).resize(function() {
+       
+       
+    var marginWindow = $(window).height();
+    var marginFot = marginWindow - $('.footerPrincipal').height();
+    var marginSeñalamiento = ((marginWindow / 100) * 50) - $('.señalDerecha').height();
+    var marginSeñalDerecha = $(window).width();
+    var marginSeñalDerecha = marginSeñalDerecha - 50;
+    var marginMensaje = marginWindow / 2;
+        marginMensaje = marginMensaje - ($('.mensaje').height() / 2);
+        
+    $('.mensaje').css("margin-top",marginMensaje);
+    $('.slider').height(marginWindow);
+    $('.principal').css("height", marginWindow);        
+    $('.footerPrincipal').css("margin-top", marginFot);
+    
+    $('.señalamiento').css("margin-top" , marginSeñalamiento);
+    $('.señalDerecha').css("margin-left" , marginSeñalDerecha);
+       
+   });
     
 });
 
